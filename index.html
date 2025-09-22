@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Digital Agency Website</title>
+  <title>Digital Agency | Creative Web Solutions</title>
+  <meta name="description" content="A modern digital agency crafting responsive websites, branding, and digital marketing solutions that inspire and engage."/>
   <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
 </head>
 <body>
   <!-- Header -->
@@ -13,130 +15,132 @@
       <div class="logo">Digital Agency</div>
       <div id="menu-toggle">&#9776;</div>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./pages/about.html">About</a></li>
+        <li><a href="./pages/services.html">Services</a></li>
+        <li><a href="./pages/portfolio.html">Portfolio</a></li>
+        <li><a href="./pages/testimonials.html">Testimonials</a></li>
+        <li><a href="./pages/contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section class="hero" id="hero">
-    <div class="hero-content fade-in">
-      <h1>Welcome! We Are Creative Agency</h1>
-      <p>Crafting digital experiences that inspire and engage.</p>
-      <button class="btn">Get Started</button>
+    <div class="hero-content" data-aos="fade-up">
+      <h1>We Build <span class="highlight">Digital Experiences</span></h1>
+      <p>From websites to branding to marketing — we help you grow online with impact.</p>
+      <div class="btn-wrapper">
+        <a href="./pages/services.html" class="btn">Explore Our Services</a>
+      </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="about fade-in">
-    <div class="container">
+  <!-- About Preview -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
       <h2>About Us</h2>
       <p>
-        We are a passionate team of designers, developers, and strategists 
-        focused on building brands that stand out. Our mission is to transform 
-        ideas into stunning digital experiences.
+        We are a passionate team of designers, developers, and strategists. Our mission is to transform 
+        ideas into stunning digital solutions that empower brands and engage audiences.
       </p>
-      <h2>Who We Are</h2>
-        <p>We are a forward-thinking company passionate about design, development, and delivering impactful digital solutions.</p>
-        <h2>Our Mission</h2>
-        <p>Our mission is to help businesses thrive with cutting-edge technology and innovative ideas.</p>
+      <div class="btn-wrapper">
+        <a href="./pages/about.html" class="btn secondary">Learn More</a>
+      </div>
     </div>
   </section>
 
-  <!-- Services -->
+  <!-- Services Preview -->
   <section id="services" class="services" style="background: var(--accent);">
     <div class="container">
-      <h2 class="fade-in">Our Services</h2>
+      <h2 data-aos="fade-up">Our Services</h2>
       <div class="service-grid">
-        <div class="service slide-left">
+        <div class="service" data-aos="fade-right">
           <h3>Web Design</h3>
-          <p>Modern, responsive websites tailored to your brand and audience.</p>
+          <p>Responsive, modern websites tailored to your audience.</p>
         </div>
-        <div class="service fade-in">
+        <div class="service" data-aos="fade-up" data-aos-delay="150">
           <h3>Branding</h3>
-          <p>Identity design that captures your vision and resonates with people.</p>
+          <p>Identity design that captures your vision and tells your story.</p>
         </div>
-        <div class="service slide-right">
+        <div class="service" data-aos="fade-left" data-aos-delay="300">
           <h3>Digital Marketing</h3>
-          <p>Data-driven campaigns that grow your business and increase reach.</p>
+          <p>Smart, data-driven campaigns to grow reach and revenue.</p>
         </div>
+      </div>
+      <div class="btn-wrapper">
+        <a href="./pages/services.html" class="btn secondary">View All Services</a>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio -->
-  <section id="portfolio" class="portfolio fade-in">
-    <div class="container">
-      <h2>Our Work</h2>
+  <!-- Portfolio Preview -->
+  <section id="portfolio" class="portfolio">
+    <div class="container" data-aos="fade-up">
+      <h2>Featured Work</h2>
       <div class="portfolio-grid">
-        <img src="https://picsum.photos/400/300?random=2" alt="Portfolio 1"/>
-        <img src="https://picsum.photos/400/300?random=3" alt="Portfolio 2"/>
-        <img src="https://picsum.photos/400/300?random=4" alt="Portfolio 3"/>
-        <img src="https://picsum.photos/400/300?random=5" alt="Portfolio 4"/>
-        <img src="https://picsum.photos/400/300?random=6" alt="Portfolio 5"/>
-        <img src="https://picsum.photos/400/300?random=7" alt="Portfolio 6"/>
+        <img src="https://picsum.photos/400/300?random=2" alt="Project Example 1" data-aos="zoom-in"/>
+        <img src="https://picsum.photos/400/300?random=3" alt="Project Example 2" data-aos="zoom-in" data-aos-delay="150"/>
+        <img src="https://picsum.photos/400/300?random=4" alt="Project Example 3" data-aos="zoom-in" data-aos-delay="300"/>
+      </div>
+      <div class="btn-wrapper">
+        <a href="./pages/portfolio.html" class="btn secondary">See Our Portfolio</a>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials -->
-<section id="testimonials" class="testimonials fade-in">
-  <div class="container">
-    <h2>What Clients Say</h2>
-    <div class="testimonial-wrapper">
-      <div class="testimonial-track" id="testimonial-track">
-        <div class="testimonial">
-          <blockquote>
-            “This agency completely transformed our online presence. 
-            Professional, creative, and results-driven!”
-            <cite>- Tom Doe., Startup Founder</cite>
-          </blockquote>
-        </div>
-        <div class="testimonial">
-          <blockquote>
-            “Their design skills and attention to detail are unmatched. 
-            We saw immediate improvements in engagement.”
-            <cite>- John Doe., Marketing Director</cite>
-          </blockquote>
-        </div>
-        <div class="testimonial">
-          <blockquote>
-            “A fantastic partner who understands both design and strategy. 
-            They truly care about client success.”
-            <cite>- Jane Doe., CEO</cite>
-          </blockquote>
+  <!-- Testimonials Preview -->
+  <section id="testimonials" class="testimonials-page">
+    <div class="container" data-aos="fade-up">
+      <h2>What Clients Say</h2>
+      <div class="testimonial">
+        <div class="testimonial-track" id="testimonial-track">
+          <div class="testimonial-card" data-aos="fade-right">
+            <blockquote>
+              “This agency completely transformed our online presence. 
+              Professional, creative, and results-driven!”
+              <cite>- Tom Doe, Startup Founder</cite>
+            </blockquote>
+          </div>
+          <div class="testimonial-card" data-aos="fade-left" data-aos-delay="150">
+            <blockquote>
+              “Their design skills and attention to detail are unmatched. 
+              We saw immediate improvements in engagement.”
+              <cite>- John Doe, Marketing Director</cite>
+            </blockquote>
+          </div>
         </div>
       </div>
+      <div class="btn-wrapper">
+        <a href="./pages/testimonials.html" class="btn secondary">Read More Reviews</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-  <!-- Contact -->
-  <section id="contact" class="contact fade-in">
-    <div class="container">
-      <h2>Get In Touch</h2>
-      <form id="contact-form">
-        <input type="text" placeholder="Your Name" required/>
-        <input type="email" placeholder="Your Email" required/>
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
+  <!-- Contact CTA -->
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+      <h2>Ready to Grow Your Brand?</h2>
+      <p>Let’s work together to create something exceptional for your business.</p>
+      <div class="btn-wrapper">
+        <a href="./pages/contact.html" class="btn">Get In Touch</a>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025. Digital Agency. All rights reserved. Made by Instructor Eddy.</p>
+    <p>&copy; 2025 | Gideon Udeh. Digital Agency. All rights reserved.</p>
   </footer>  
-  <script defer src="js/main.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+  <script defer src="./js/main.js"></script>
 </body>
 </html>
-
-
-
